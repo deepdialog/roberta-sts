@@ -5,13 +5,13 @@
 for testing
 
 ```bash
-docker run -it --rm -p 8000:8000 qhduan/roberta-sts
+docker run -it --rm --name roberta-sts -p 8000:8000 qhduan/roberta-sts
 ```
 
 for service
 
 ```bash
-docker run -d --restart=always -p 8000:8000 qhduan/roberta-sts
+docker run -d --restart=always --name roberta-sts -p 8000:8000 qhduan/roberta-sts
 ```
 
 ## test
